@@ -24,7 +24,11 @@ const config: Config = {
       md: "768px",
       lg: "1200px",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/src/assets/avatar-1.png')",
+      },
+    },
   },
   plugins: [],
 };
