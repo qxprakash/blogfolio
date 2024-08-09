@@ -1,6 +1,11 @@
 import Button from "@/components/Button";
 import starBg from "@/assets/stars.png";
 import avatarImage from "@/assets/avatar_image.webp";
+import hiEmoticon from "@/assets/blob-wave.gif";
+import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -14,15 +19,35 @@ export const Hero = () => {
       ></div>
       {/* <div className="absoulte h-[344px] w-[344px] rounded-full border top-1/2 left-1/2"></div> */}
       <div className="container">
-        <h1 className="text-8xl font-semibold tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
-          Hi There
+        <h1 className="text-4xl font-semibold tracking-tighter mt-4  bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
+          Hi There, <br /> I'm Prakash {"  "}
+          <img className="inline mb-1 w-8" src={hiEmoticon.src} />
         </h1>
-        {/* <p className="text-lg text-white/70 mt-5 text-center">
+        <p className="text-lg text-wrap text-white/70 mt-5 text-center">
           Your Friendly Neighbourhood Developer. I build things for browsers and
           servers , and sometimes for my SBC
-        </p> */}
+        </p>
         <div className="flex justify-center mt-5">
-          <Button>Get In Touch</Button>
+          {/* <Button>Get In Touch</Button> */}
+        </div>
+        <div className="flex items-center space-x-2 justify-center">
+          <a
+            href="https://twitter.com/Prakashoax"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center mt-5"
+          >
+            <FaTwitter className="text-2xl mr-2" />
+          </a>
+
+          <a
+            href="https://github.com/qxprakash"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center mt-5"
+          >
+            <FaGithub className="text-2xl mr-2" />
+          </a>
         </div>
       </div>
     </section>
