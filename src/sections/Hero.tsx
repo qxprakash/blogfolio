@@ -25,7 +25,7 @@ export const Hero = () => {
         </h1>
         <p className="text-lg text-wrap text-white/70 mt-5 text-center">
           Your Friendly Neighbourhood Developer. I build things for browsers and
-          servers , and sometimes for my SBC
+          servers, and sometimes for my SBC
         </p>
         <div className="flex justify-center mt-5">
           {/* <Button>Get In Touch</Button> */}
@@ -47,6 +47,24 @@ export const Hero = () => {
             className="flex items-center justify-center mt-5"
           >
             <FaGithub className="text-2xl mr-2" />
+          </a>
+
+          <a
+            href="mailto:qxprakash@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center mt-5"
+          >
+            <BiLogoGmail className="text-2xl mr-2" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/prakash-kumar-a55577198/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center mt-5"
+          >
+            <FaLinkedin className="text-2xl mr-2" />
           </a>
         </div>
       </div>
