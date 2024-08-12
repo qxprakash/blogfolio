@@ -5,7 +5,7 @@ const Avatar = () => {
   return (
 <>
     {/* <div className="flex relative left-1/2 bottom-[-10rem] translate-x-[-50%] bottom- flex-col items-center"> */}
-      <div className="md:hidden flex flex-col items-center mt-40">
+      <div className="md:hidden flex flex-col items-center mt-28">
       <div className="relative flex flex-col items-center">
         {/* Vertical line above the avatar with fade effect */}
         <div className="h-16 w-0.5 bg-gradient-to-b from-transparent to-blue-500"></div>

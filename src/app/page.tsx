@@ -1,4 +1,5 @@
 import Avatar from "@/components/Avatar";
+import Workspace from "@/components/Workspace";
 import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Avatar />
+      <Workspace />
       <FooterWrapper />
     </>
   );

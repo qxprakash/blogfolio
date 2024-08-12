@@ -33,3 +33,12 @@ To run this project locally, follow these steps:
    ```bash
    pnpm dev
    ```
+
+### To Be Implemented
+
+- [] mdx blog
+- [] Optimize images
+- [] Use CDN
+- [] Reduce the bundle size
+
+
