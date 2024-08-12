@@ -9,7 +9,6 @@ export default function Home() {
       <Header />
       <Hero />
       <FooterWrapper />
-
     </>
   );
 }
