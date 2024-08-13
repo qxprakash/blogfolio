@@ -24,7 +24,7 @@ export const Hero = () => {
         </h1>
         <p className="text-lg md:w-1/2 mx-auto text-wrap text-white/70 mt-5 text-center">
           Your Friendly Neighbourhood Developer. I build things for browsers and
-          servers, and sometimes for my SBC ,
+          servers, and sometimes for my SBC.
         </p>
         <div className="flex justify-center mt-5">
           {/* <Button>Get In Touch</Button> */}

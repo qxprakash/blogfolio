@@ -23,18 +23,24 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <div className="flex items-start mb-8 relative">
       {/* Vertical line and logo */}
-      <div className="relative flex flex-col items-center mr-6">
+      <div className="relative flex flex-col items-center mr-2">
         {/* Vertical line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-500"></div>
 
-        {/* Logo with border */}
-        <div className="z-10 bg-[#1a1a2e] p-2 rounded-full border-2 border-gray-500">
-          <Image src={logo} alt={`${company} Logo`} width={40} height={40} />
+        {/* Logo with square shape */}
+        <div className="z-10 rounded-lg p-1">
+          <Image
+            src={logo}
+            alt={`${company} Logo`}
+            width={40}
+            height={40}
+            className="object-cover w-10 h- rounded-lg"
+          />
         </div>
       </div>
 
       {/* Experience details */}
-      <div className="bg-[#1a1a2e] p-6 rounded-lg shadow-lg border border-gray-700 w-full">
+      <div className="bg-[#1a1a2e] p-6 rounded-lg shadow-lg border border-gray-700 w-4/5">
         <h3 className="text-xl font-semibold text-white">{company}</h3>
         <p className="text-sm text-gray-400">{duration}</p>
         <p className="text-lg text-white mt-2">{position}</p>
