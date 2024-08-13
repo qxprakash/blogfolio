@@ -14,9 +14,10 @@ export const Hero = () => {
       style={{ backgroundImage: `url(${starBg.src})` }}
     >
       <div
-        className="min-h-48 min-w-48 rounded-full mt-12 bg-cover border-white/20 shadow-[20px_-20px_50px_rgb(255_255_255/0.5),-20px_-20px_80px_rgb(255_255_255/0.1),0_0_50px_rgb(140_69_255)]"
+        className="min-h-48 min-w-48 rounded-full mt-12 bg-cover border-white/20 shadow-[20px_-20px_50px_rgb(255_255_255/0.5),-20px_-20px_80px_rgb(255_255_255/0.1),0_0_50px_rgb(140_69_255)] animate-flicker"
         style={{ backgroundImage: `url(${avatarImage.src})` }}
       ></div>
+
       <div className="container">
         <h1 className="text-4xl font-semibold tracking-tighter mt-4  bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
           Hi There, <br /> I'm Prakash {"  "}
