@@ -1,6 +1,10 @@
 import React from "react";
 import Avatar from "./Avatar";
+import companyOneLogo from "@/assets/company_one_logo.png"
+import companyTwoLogo from "@/assets/company_two_logo.png"
+import companyThreeLogo from "@/assets/company_three_logo.png"
 import ExperienceCard from "./ExprienceCard";
+import Image from "next/image";
 
 const Workspace: React.FC = () => {
   return (
@@ -10,6 +14,7 @@ const Workspace: React.FC = () => {
         <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text text-center">
           Overview
         </h1>
+        <Image src={companyOneLogo} alt="" width={20} height={20}/>
       </div>
       <div className="w-full max-w-2xl mt-12">
         <ExperienceCard
@@ -19,6 +24,7 @@ const Workspace: React.FC = () => {
           location="Remote"
           tags={["UI Design", "UX Research", "Figma", "React"]}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          logo={companyOneLogo}
         />
         <ExperienceCard
           company="Company Two"
@@ -27,6 +33,7 @@ const Workspace: React.FC = () => {
           location="New York, USA"
           tags={["JavaScript", "Tailwind CSS", "Vue.js"]}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          logo={companyTwoLogo}
         />
         <ExperienceCard
           company="Company Three"
@@ -35,6 +42,7 @@ const Workspace: React.FC = () => {
           location="San Francisco, USA"
           tags={["HTML", "CSS", "JavaScript", "Node.js"]}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          logo={companyThreeLogo}
         />
       </div>
     </section>
