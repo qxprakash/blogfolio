@@ -29,19 +29,31 @@ const config: Config = {
         hero: "url('/src/assets/avatar-1.png')",
       },
       keyframes: {
-        flicker: {
-          '0%, 19%, 21%, 50%, 52%, 80%, 100%': {
-            boxShadow: '20px -20px 50px rgba(255, 255, 255, 0.5), -20px -20px 80px rgba(255, 255, 255, 0.1), 0 0 50px rgba(140, 69, 255, 1)',
+        smoothRandomGlow: {
+          '0%, 100%': {
+            boxShadow: '20px -20px 60px rgba(255, 255, 255, 0.7), -20px -20px 90px rgba(255, 255, 255, 0.2), 0 0 60px rgba(140, 69, 255, 1.2)',
             opacity: '1',
           },
-          '20%, 51%, 81%': {
-            boxShadow: '20px -20px 30px rgba(255, 255, 255, 0.3), -20px -20px 60px rgba(255, 255, 255, 0.05), 0 0 30px rgba(140, 69, 255, 0.8)',
-            opacity: '0.8',
+          '20%': {
+            boxShadow: '20px -20px 50px rgba(255, 255, 255, 0.5), -20px -20px 80px rgba(255, 255, 255, 0.1), 0 0 50px rgba(140, 69, 255, 1)',
+            opacity: '0.9',
+          },
+          '40%': {
+            boxShadow: '20px -20px 75px rgba(255, 255, 255, 0.8), -20px -20px 100px rgba(255, 255, 255, 0.25), 0 0 75px rgba(140, 69, 255, 1.3)',
+            opacity: '0.95',
+          },
+          '60%': {
+            boxShadow: '20px -20px 55px rgba(255, 255, 255, 0.65), -20px -20px 85px rgba(255, 255, 255, 0.18), 0 0 55px rgba(140, 69, 255, 1.1)',
+            opacity: '1',
+          },
+          '80%': {
+            boxShadow: '20px -20px 50px rgba(255, 255, 255, 0.5), -20px -20px 80px rgba(255, 255, 255, 0.1), 0 0 50px rgba(140, 69, 255, 1)',
+            opacity: '0.9',
           },
         },
       },
       animation: {
-        flicker: 'flicker 4s infinite',
+        smoothRandomGlow: 'smoothRandomGlow 8s ease-in-out infinite',
       },
     },
   },
