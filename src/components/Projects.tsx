@@ -10,7 +10,6 @@ const Projects = () => {
           Projects
         </h1>
       </div>
-
       <ProjectCard
         title="Slashboard Desktop"
         description="A simple and convenient dashboard to monitor the activity and performance of your home servers."

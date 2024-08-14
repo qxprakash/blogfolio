@@ -55,10 +55,20 @@ const config: Config = {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(100%)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
       },
       animation: {
         smoothRandomGlow: 'smoothRandomGlow 8s ease-in-out infinite',
         flow: 'flow 2s linear infinite',
+        marquee: 'marquee 15s linear infinite',  // Increased the duration for a smoother effect
+        'marquee-reverse': 'marquee-reverse 15s linear infinite',  // Match duration with the first row
       },
     },
   },

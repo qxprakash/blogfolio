@@ -9,6 +9,8 @@ import { FaUser } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa6";
 import { LuContainer } from "react-icons/lu";
 import { FaStackOverflow } from "react-icons/fa";
+import ContactSection from "@/components/ContactSection";
+import TechStackBanner from "@/components/TechStackBanner";
 
 
 
@@ -24,6 +26,8 @@ export default function Home() {
       <Avatar icon={LuContainer} marginTop="mt-4"/>
       <Projects />
       <Avatar icon={FaStackOverflow} marginTop="mt-8" />
+      <ContactSection />
+      <TechStackBanner />
       <FooterWrapper />
     </>
   );
