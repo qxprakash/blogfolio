@@ -51,9 +51,14 @@ const config: Config = {
             opacity: '0.9',
           },
         },
+        flow: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
       },
       animation: {
         smoothRandomGlow: 'smoothRandomGlow 8s ease-in-out infinite',
+        flow: 'flow 2s linear infinite',
       },
     },
   },
