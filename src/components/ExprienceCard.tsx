@@ -23,9 +23,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <div className="flex items-start mb-8 relative">
       {/* Vertical line and logo */}
-      <div className="relative flex flex-col items-center mr-2">
+      <div className="absolute left-6 w-0.5 z-10 h-full bg-gray-500"></div>
+      <div className="relative flex flex-col  items-center mr-2">
         {/* Vertical line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-500"></div>
+        {/* <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 border-2 border-white z-20 h-full bg-gray-500"></div> */}
 
         {/* Logo with square shape */}
         <div className="z-10 rounded-lg p-1">
