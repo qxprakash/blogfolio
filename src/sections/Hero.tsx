@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import starBg from "@/assets/stars.png";
 import avatarImage from "@/assets/avatar_image.webp";
 import hiEmoticon from "@/assets/blob-wave.gif";
@@ -6,6 +5,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+
 
 export const Hero = () => {
   return (
@@ -20,8 +21,14 @@ export const Hero = () => {
 
       <div className="container">
         <h1 className="text-4xl font-semibold tracking-tighter mt-4  bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center">
-          Hi There, <br /> I'm Prakash {"  "}
-          <img className="inline mb-1 w-8" src={hiEmoticon.src} />
+          Hi There, <br /> I&apos;m Prakash {"  "}
+          <Image
+            className="inline mb-1"
+            src={hiEmoticon.src}
+            alt="Hi Emoticon"
+            width={32} // 32px corresponds to the 'w-8' Tailwind class
+            height={32} // Same height as width to maintain aspect ratio
+          />
         </h1>
         <p className="text-lg md:w-1/2 mx-auto text-wrap text-white/70 mt-5 text-center">
           Your Friendly Neighbourhood Developer. I build things for browsers and

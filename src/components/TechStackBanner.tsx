@@ -24,27 +24,27 @@ const FaPhp = dynamic(() => import("react-icons/fa").then(mod => mod.FaPhp));
 const TechStackBanner = () => {
   // First set of icons for the first banner
   const iconsSet1 = [
-    <FaReact className="text-purple-400 text-4xl" />,
-    <FaNodeJs className="text-green-400 text-4xl" />,
-    <FaPython className="text-yellow-400 text-4xl" />,
-    <FaRust className="text-red-400 text-4xl" />,
-    <FaHtml5 className="text-orange-400 text-4xl" />,
-    <FaCss3Alt className="text-blue-400 text-4xl" />,
-    <FaGitAlt className="text-red-600 text-4xl" />,
+    <FaReact key="react" className="text-purple-400 text-4xl" />,
+    <FaNodeJs key="nodejs" className="text-green-400 text-4xl" />,
+    <FaPython key="python" className="text-yellow-400 text-4xl" />,
+    <FaRust key="rust" className="text-red-400 text-4xl" />,
+    <FaHtml5 key="html5" className="text-orange-400 text-4xl" />,
+    <FaCss3Alt key="css3" className="text-blue-400 text-4xl" />,
+    <FaGitAlt key="git" className="text-red-600 text-4xl" />,
   ];
 
   // Second set of icons for the second banner
   const iconsSet2 = [
-    <FaDocker className="text-blue-500 text-4xl" />,
-    <FaJava className="text-red-700 text-4xl" />,
-    <FaAws className="text-yellow-500 text-4xl" />,
-    <FaLinux className="text-yellow-600 text-4xl" />,
-    <FaDatabase className="text-green-500 text-4xl" />,
-    <FaJsSquare className="text-yellow-400 text-4xl" />,
-    <FaSwift className="text-red-400 text-4xl" />,
-    <FaAngular className="text-red-500 text-4xl" />,
-    <FaVuejs className="text-green-400 text-4xl" />,
-    <FaPhp className="text-indigo-400 text-4xl" />,
+    <FaDocker key="docker" className="text-blue-500 text-4xl" />,
+    <FaJava key="java" className="text-red-700 text-4xl" />,
+    <FaAws key="aws" className="text-yellow-500 text-4xl" />,
+    <FaLinux key="linux" className="text-yellow-600 text-4xl" />,
+    <FaDatabase key="database" className="text-green-500 text-4xl" />,
+    <FaJsSquare key="js" className="text-yellow-400 text-4xl" />,
+    <FaSwift key="swift" className="text-red-400 text-4xl" />,
+    <FaAngular key="angular" className="text-red-500 text-4xl" />,
+    <FaVuejs key="vue" className="text-green-400 text-4xl" />,
+    <FaPhp key="php" className="text-indigo-400 text-4xl" />,
   ];
 
   return (
@@ -57,14 +57,14 @@ const TechStackBanner = () => {
       {/* First Scrolling Icons Banner */}
       <div className="flex animate-slide space-x-[50px]">
         {iconsSet1.concat(iconsSet1).map((icon, index) => (
-          <span key={index} className="mx-4">{icon}</span>
+          <span key={`iconSet1-${index}`} className="mx-4">{icon}</span>
         ))}
       </div>
 
       {/* Second Scrolling Icons Banner */}
       <div className="flex animate-slideOpp space-x-[50px] mt-12">
         {iconsSet2.concat(iconsSet2).map((icon, index) => (
-          <span key={index} className="mx-4">{icon}</span>
+          <span key={`iconSet2-${index}`} className="mx-4">{icon}</span>
         ))}
       </div>
     </div>
