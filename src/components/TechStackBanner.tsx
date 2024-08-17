@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import dynamic from "next/dynamic";
 
@@ -22,72 +22,50 @@ const FaVuejs = dynamic(() => import("react-icons/fa").then(mod => mod.FaVuejs))
 const FaPhp = dynamic(() => import("react-icons/fa").then(mod => mod.FaPhp));
 
 const TechStackBanner = () => {
+  // First set of icons for the first banner
+  const iconsSet1 = [
+    <FaReact className="text-purple-400 text-4xl" />,
+    <FaNodeJs className="text-green-400 text-4xl" />,
+    <FaPython className="text-yellow-400 text-4xl" />,
+    <FaRust className="text-red-400 text-4xl" />,
+    <FaHtml5 className="text-orange-400 text-4xl" />,
+    <FaCss3Alt className="text-blue-400 text-4xl" />,
+    <FaGitAlt className="text-red-600 text-4xl" />,
+  ];
+
+  // Second set of icons for the second banner
+  const iconsSet2 = [
+    <FaDocker className="text-blue-500 text-4xl" />,
+    <FaJava className="text-red-700 text-4xl" />,
+    <FaAws className="text-yellow-500 text-4xl" />,
+    <FaLinux className="text-yellow-600 text-4xl" />,
+    <FaDatabase className="text-green-500 text-4xl" />,
+    <FaJsSquare className="text-yellow-400 text-4xl" />,
+    <FaSwift className="text-red-400 text-4xl" />,
+    <FaAngular className="text-red-500 text-4xl" />,
+    <FaVuejs className="text-green-400 text-4xl" />,
+    <FaPhp className="text-indigo-400 text-4xl" />,
+  ];
+
   return (
-    <div className="relative overflow-hidden w-full h-32 mt-8 mb-16">
-      {/* First Row - Moving Left */}
-      <div className="flex animate-marquee space-x-12">
-        <div className="flex space-x-12">
-          <FaReact className="text-blue-500 text-4xl" />
-          <FaNodeJs className="text-green-500 text-4xl" />
-          <FaPython className="text-yellow-500 text-4xl" />
-          <FaRust className="text-gray-500 text-4xl" />
-          <FaHtml5 className="text-orange-500 text-4xl" />
-          <FaCss3Alt className="text-blue-500 text-4xl" />
-          <FaGitAlt className="text-red-500 text-4xl" />
-          <FaDocker className="text-blue-500 text-4xl" />
-          <FaJava className="text-red-600 text-4xl" />
-          <FaAws className="text-orange-500 text-4xl" />
-          <FaLinux className="text-yellow-500 text-4xl" />
-          <FaDatabase className="text-purple-500 text-4xl" />
-          <FaJsSquare className="text-yellow-500 text-4xl" />
-        </div>
-        <div className="flex space-x-12">
-          <FaReact className="text-blue-500 text-4xl" />
-          <FaNodeJs className="text-green-500 text-4xl" />
-          <FaPython className="text-yellow-500 text-4xl" />
-          <FaRust className="text-gray-500 text-4xl" />
-          <FaHtml5 className="text-orange-500 text-4xl" />
-          <FaCss3Alt className="text-blue-500 text-4xl" />
-          <FaGitAlt className="text-red-500 text-4xl" />
-          <FaDocker className="text-blue-500 text-4xl" />
-          <FaJava className="text-red-600 text-4xl" />
-          <FaAws className="text-orange-500 text-4xl" />
-          <FaLinux className="text-yellow-500 text-4xl" />
-          <FaDatabase className="text-purple-500 text-4xl" />
-          <FaJsSquare className="text-yellow-500 text-4xl" />
-        </div>
+    <div className="relative overflow-hidden py-10">
+      {/* Left Gradient */}
+      <div className="absolute top-0 left-0 w-[250px] h-full bg-gradient-to-r from-gray-950 to-transparent z-10"></div>
+      {/* Right Gradient */}
+      <div className="absolute top-0 right-0 w-[250px] h-full bg-gradient-to-l from-gray-950 to-transparent z-10"></div>
+
+      {/* First Scrolling Icons Banner */}
+      <div className="flex animate-slide space-x-[50px]">
+        {iconsSet1.concat(iconsSet1).map((icon, index) => (
+          <span key={index} className="mx-4">{icon}</span>
+        ))}
       </div>
 
-      {/* Second Row - Moving Right */}
-      <div className="flex animate-marquee-reverse space-x-12 mt-8">
-        <div className="flex space-x-12">
-          <FaSwift className="text-orange-500 text-4xl" />
-          <FaAngular className="text-red-500 text-4xl" />
-          <FaVuejs className="text-green-500 text-4xl" />
-          <FaPhp className="text-purple-500 text-4xl" />
-          <FaDatabase className="text-purple-500 text-4xl" />
-          <FaAws className="text-orange-500 text-4xl" />
-          <FaLinux className="text-yellow-500 text-4xl" />
-          <FaJava className="text-red-600 text-4xl" />
-          <FaCss3Alt className="text-blue-500 text-4xl" />
-          <FaHtml5 className="text-orange-500 text-4xl" />
-          <FaRust className="text-gray-500 text-4xl" />
-          <FaPython className="text-yellow-500 text-4xl" />
-        </div>
-        <div className="flex space-x-12">
-          <FaSwift className="text-orange-500 text-4xl" />
-          <FaAngular className="text-red-500 text-4xl" />
-          <FaVuejs className="text-green-500 text-4xl" />
-          <FaPhp className="text-purple-500 text-4xl" />
-          <FaDatabase className="text-purple-500 text-4xl" />
-          <FaAws className="text-orange-500 text-4xl" />
-          <FaLinux className="text-yellow-500 text-4xl" />
-          <FaJava className="text-red-600 text-4xl" />
-          <FaCss3Alt className="text-blue-500 text-4xl" />
-          <FaHtml5 className="text-orange-500 text-4xl" />
-          <FaRust className="text-gray-500 text-4xl" />
-          <FaPython className="text-yellow-500 text-4xl" />
-        </div>
+      {/* Second Scrolling Icons Banner */}
+      <div className="flex animate-slideOpp space-x-[50px] mt-12">
+        {iconsSet2.concat(iconsSet2).map((icon, index) => (
+          <span key={index} className="mx-4">{icon}</span>
+        ))}
       </div>
     </div>
   );

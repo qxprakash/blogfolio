@@ -51,12 +51,20 @@ const config: Config = {
             opacity: '0.9',
           },
         },
+        slide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        slideOpp: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
         flow: {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(100%)' },
         },
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
+          '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
         'marquee-reverse': {
@@ -67,8 +75,15 @@ const config: Config = {
       animation: {
         smoothRandomGlow: 'smoothRandomGlow 8s ease-in-out infinite',
         flow: 'flow 2s linear infinite',
-        marquee: 'marquee 15s linear infinite',  // Increased the duration for a smoother effect
-        'marquee-reverse': 'marquee-reverse 15s linear infinite',  // Match duration with the first row
+        slide: 'slide 35s linear infinite',
+        slideOpp: 'slideOpp 35s linear infinite',
+        marquee: 'marquee 5s linear infinite',  // Increase duration for smoother continuous flow
+        'marquee-reverse': 'marquee-reverse 30s linear infinite', // Match duration with the first row
+      },
+      spacing: {
+        '50px': '50px',
+        '60px': '60px',
+        '250px': '250px',
       },
     },
   },
