@@ -1,8 +1,25 @@
+"use client"
 import React from "react";
-import {
-  FaReact, FaNodeJs, FaPython, FaRust, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker,
-  FaJava, FaAws, FaLinux, FaDatabase, FaJsSquare, FaSwift, FaAngular, FaVuejs, FaPhp
-} from "react-icons/fa"; // Importing more icons from react-icons
+import dynamic from "next/dynamic";
+
+// Lazy loading the icons
+const FaReact = dynamic(() => import("react-icons/fa").then(mod => mod.FaReact));
+const FaNodeJs = dynamic(() => import("react-icons/fa").then(mod => mod.FaNodeJs));
+const FaPython = dynamic(() => import("react-icons/fa").then(mod => mod.FaPython));
+const FaRust = dynamic(() => import("react-icons/fa").then(mod => mod.FaRust));
+const FaHtml5 = dynamic(() => import("react-icons/fa").then(mod => mod.FaHtml5));
+const FaCss3Alt = dynamic(() => import("react-icons/fa").then(mod => mod.FaCss3Alt));
+const FaGitAlt = dynamic(() => import("react-icons/fa").then(mod => mod.FaGitAlt));
+const FaDocker = dynamic(() => import("react-icons/fa").then(mod => mod.FaDocker));
+const FaJava = dynamic(() => import("react-icons/fa").then(mod => mod.FaJava));
+const FaAws = dynamic(() => import("react-icons/fa").then(mod => mod.FaAws));
+const FaLinux = dynamic(() => import("react-icons/fa").then(mod => mod.FaLinux));
+const FaDatabase = dynamic(() => import("react-icons/fa").then(mod => mod.FaDatabase));
+const FaJsSquare = dynamic(() => import("react-icons/fa").then(mod => mod.FaJsSquare));
+const FaSwift = dynamic(() => import("react-icons/fa").then(mod => mod.FaSwift));
+const FaAngular = dynamic(() => import("react-icons/fa").then(mod => mod.FaAngular));
+const FaVuejs = dynamic(() => import("react-icons/fa").then(mod => mod.FaVuejs));
+const FaPhp = dynamic(() => import("react-icons/fa").then(mod => mod.FaPhp));
 
 const TechStackBanner = () => {
   return (
