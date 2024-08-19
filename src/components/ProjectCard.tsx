@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, language, stars, forks, link, repoCount }) => {
   return (
-    <div className="relative p-6 rounded-lg shadow-lg border border-[#2e2e4d] h-full flex flex-col justify-between bg-[#121212] bg-opacity-40 backdrop-filter backdrop-blur-md overflow-hidden">
+    <div className="relative p-6 mx-1.5 rounded-lg shadow-lg border border-[#2e2e4d] h-full flex flex-col justify-between bg-[#121212] bg-opacity-40 backdrop-filter backdrop-blur-md overflow-hidden">
       {/* Subtle Glowing Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#45285e33] to-transparent opacity-30 pointer-events-none"></div>
       <div className="absolute inset-0 rounded-lg border border-opacity-10 bg-gradient-to-br from-transparent to-[#3a1d5c4d]"></div>
