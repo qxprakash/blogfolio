@@ -55,17 +55,31 @@ const TechStackBanner = () => {
       <div className="absolute top-0 right-0 w-[250px] h-full bg-gradient-to-l from-gray-950 to-transparent z-10"></div>
 
       {/* First Scrolling Icons Banner */}
-      <div className="flex animate-slide space-x-[50px]">
-        {iconsSet1.concat(iconsSet1).map((icon, index) => (
-          <span key={`iconSet1-${index}`} className="mx-4">{icon}</span>
-        ))}
+      <div className="flex animate-slide">
+        <div className="flex">
+          {iconsSet1.concat(iconsSet1).map((icon, index) => (
+            <span key={index} className="inline-block px-8">{icon}</span>
+          ))}
+        </div>
+        <div className="flex">
+          {iconsSet1.concat(iconsSet1).map((icon, index) => (
+            <span key={index} className="inline-block px-8">{icon}</span>
+          ))}
+        </div>
       </div>
 
       {/* Second Scrolling Icons Banner */}
-      <div className="flex animate-slideOpp space-x-[50px] mt-12">
-        {iconsSet2.concat(iconsSet2).map((icon, index) => (
-          <span key={`iconSet2-${index}`} className="mx-4">{icon}</span>
-        ))}
+      <div className="flex animate-slideOpp mt-12">
+        <div className="flex">
+          {iconsSet2.concat(iconsSet2).map((icon, index) => (
+            <span key={index} className="inline-block px-8">{icon}</span>
+          ))}
+        </div>
+        <div className="flex">
+          {iconsSet2.concat(iconsSet2).map((icon, index) => (
+            <span key={index} className="inline-block px-8">{icon}</span>
+          ))}
+        </div>
       </div>
     </div>
   );
