@@ -71,6 +71,10 @@ const config: Config = {
           '0%': { transform: 'translateX(-25%)' },
           '100%': { transform: 'translateX(0)' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
       animation: {
         smoothRandomGlow: 'smoothRandomGlow 8s ease-in-out infinite',
@@ -79,6 +83,7 @@ const config: Config = {
         slideOpp: 'slideOpp 35s linear infinite',
         marquee: 'marquee 40s linear infinite',
         'marquee-reverse': 'marquee-reverse 40s linear infinite',
+        float: 'float 3s ease-in-out infinite',
       },
       spacing: {
         '50px': '50px',
