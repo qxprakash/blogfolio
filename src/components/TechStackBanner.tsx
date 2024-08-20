@@ -48,36 +48,36 @@ const TechStackBanner = () => {
   ];
 
   return (
-    <div className="relative overflow-hidden py-10">
+    <div className="relative overflow-hidden py-6 lg:py-10">
       {/* Left Gradient */}
-      <div className="absolute top-0 left-0 w-[250px] h-full bg-gradient-to-r from-gray-950 to-transparent z-10"></div>
+      <div className="absolute top-0 left-0 w-[100px] lg:w-[150px] h-full bg-gradient-to-r from-gray-950 to-transparent z-10"></div>
       {/* Right Gradient */}
-      <div className="absolute top-0 right-0 w-[250px] h-full bg-gradient-to-l from-gray-950 to-transparent z-10"></div>
+      <div className="absolute top-0 right-0 w-[100px] lg:w-[150px] h-full bg-gradient-to-l from-gray-950 to-transparent z-10"></div>
 
       {/* First Scrolling Icons Banner */}
       <div className="flex animate-slide">
         <div className="flex">
           {iconsSet1.concat(iconsSet1).map((icon, index) => (
-            <span key={index} className="inline-block px-8">{icon}</span>
+            <span key={index} className="inline-block px-4 lg:px-6">{icon}</span>
           ))}
         </div>
         <div className="flex">
           {iconsSet1.concat(iconsSet1).map((icon, index) => (
-            <span key={index} className="inline-block px-8">{icon}</span>
+            <span key={index} className="inline-block px-4 lg:px-6">{icon}</span>
           ))}
         </div>
       </div>
 
       {/* Second Scrolling Icons Banner */}
-      <div className="flex animate-slideOpp mt-12">
+      <div className="flex animate-slideOpp mt-6 lg:mt-8">
         <div className="flex">
           {iconsSet2.concat(iconsSet2).map((icon, index) => (
-            <span key={index} className="inline-block px-8">{icon}</span>
+            <span key={index} className="inline-block px-4 lg:px-6">{icon}</span>
           ))}
         </div>
         <div className="flex">
           {iconsSet2.concat(iconsSet2).map((icon, index) => (
-            <span key={index} className="inline-block px-8">{icon}</span>
+            <span key={index} className="inline-block px-4 lg:px-6">{icon}</span>
           ))}
         </div>
       </div>

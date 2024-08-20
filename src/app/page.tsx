@@ -9,10 +9,10 @@ import { FaUser } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa6";
 import { LuContainer, LuMail } from "react-icons/lu";
 import { FaStackOverflow } from "react-icons/fa";
-import ContactSection from "@/components/ContactSection";
 import TechStackBanner from "@/components/TechStackBanner";
 import GetInTouch from "@/components/GetInTouch";
 import ConnectForm from "@/components/ConnectForm";
+import TechStackSection from "@/sections/TechStackSection";
 
 
 
@@ -27,9 +27,8 @@ export default function Home() {
       <Workspace />
       <Avatar icon={LuContainer} marginTop="mt-4"/>
       <Projects />
-      <Avatar icon={FaStackOverflow} marginTop="mt-8" />
-      <ContactSection />
-      <TechStackBanner />
+      <Avatar icon={FaStackOverflow} marginTop="mt-4" />
+      <TechStackSection />
       <Avatar icon={LuMail} marginTop="mt-4" />
       <GetInTouch />
       <ConnectForm />

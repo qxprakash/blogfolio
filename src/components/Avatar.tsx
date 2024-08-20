@@ -7,7 +7,7 @@ interface AvatarProps {
 
 const Avatar = ({ icon: Icon, marginTop = "mt-28" }: AvatarProps) => {
   return (
-    <div className={`${marginTop} md:hidden flex flex-col items-center`}>
+    <div className={`${marginTop} flex flex-col items-center`}>
       <div className="relative flex flex-col items-center">
         {/* Vertical line above the avatar with fade effect */}
         <div className="h-16 w-0.5 bg-gradient-to-b from-transparent to-blue-500"></div>

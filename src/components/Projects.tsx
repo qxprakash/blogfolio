@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center mt-10 mb-20">
+    <section className="flex flex-col items-center mt-10 mb-16 lg:mb-12">
       <div className="flex items-center space-x-2 mb-10">
         <h1 className="text-4xl font-semibold">Featured</h1>
         <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-green-500 to-teal-500 text-transparent bg-clip-text text-center">
