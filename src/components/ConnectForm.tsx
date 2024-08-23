@@ -7,7 +7,7 @@ const ConnectForm = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center mx-auto p-4 sm:p-6 md:p-8 mb-10 sm:mb-16 md:mb-20 w-full max-w-xs md:space-x-4 sm:max-w-sm md:max-w-4xl lg:max-w-6xl">
       <div className="w-full md:w-1/2 md:pr-8">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">Let&aposs Connect</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">Let&apos;s Connect</h2>
         <p className="text-gray-300 mb-8">Have a question or want to collaborate? Drop me a message!</p>
         <form className="w-full">
           <div className="mb-4">
