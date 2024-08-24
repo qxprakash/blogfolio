@@ -40,5 +40,4 @@ To run this project locally, follow these steps:
 - [ ] Optimize images
 - [ ] Use CDN
 - [ ] Reduce the bundle size
-
-
+- [ ] Website Preview when Sharing the link
