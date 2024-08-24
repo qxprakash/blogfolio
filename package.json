@@ -11,6 +11,7 @@
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",
     "@lottiefiles/dotlottie-react": "^0.8.6",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
     "next": "14.2.5",
     "react": "^18",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/typography": "^0.5.14",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
