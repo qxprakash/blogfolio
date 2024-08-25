@@ -36,10 +36,10 @@ export function PostItem({ slug, title, description, date }: PostItemProps) {
       )}
       <Link
         href={slug}
-        className="inline-flex items-center px-4 py-2 bg-gray-800 text-gray-400 rounded-md hover:bg-gray-700 hover:text-gray-200 transition-all duration-300 ease-in-out group"
+        className="inline-flex items-center px-3 py-1.5 border border-gray-400 text-gray-400 rounded-sm hover:border-white hover:text-black hover:bg-white transition-all duration-200 ease-in-out group"
       >
         <span className="text-sm font-medium mr-2">Read More</span>
-        <FaArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
+        <FaArrowRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform duration-200 ease-in-out" />
       </Link>
     </article>
   );

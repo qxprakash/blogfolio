@@ -51,10 +51,10 @@ export function PaginationLink({
     <a
       href={href}
       className={classNames(
-        "px-3 py-2 border rounded transition-colors duration-300 flex items-center justify-center",
+        "px-3 py-1.5 border border-gray-600 rounded-sm transition-colors duration-200 flex items-center justify-center text-sm",
         isActive
           ? "bg-gray-800 text-white border-gray-800"
-          : "bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white border-gray-600"
+          : "text-gray-400 hover:border-purple-400 hover:text-white"
       )}
     >
       {children}
@@ -72,10 +72,10 @@ export function PaginationPrevious({
   return (
     <PaginationLink href={href}>
       {showOnlyIcon ? (
-        <FaArrowLeft />
+        <FaArrowLeft className="w-3 h-3" />
       ) : (
         <>
-          <FaArrowLeft className="mr-2" /> Previous
+          <FaArrowLeft className="w-3 h-3 mr-2" /> Previous
         </>
       )}
     </PaginationLink>
@@ -92,10 +92,10 @@ export function PaginationNext({
   return (
     <PaginationLink href={href}>
       {showOnlyIcon ? (
-        <FaArrowRight />
+        <FaArrowRight className="w-3 h-3" />
       ) : (
         <>
-          Next <FaArrowRight className="ml-2" />
+          Next <FaArrowRight className="w-3 h-3 ml-2" />
         </>
       )}
     </PaginationLink>
