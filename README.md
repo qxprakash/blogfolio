@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
 
 ### To Be Implemented
 
-- [ ] mdx blog
+- [x] mdx blog
 - [ ] Optimize images
 - [ ] Use CDN
 - [ ] Reduce the bundle size
