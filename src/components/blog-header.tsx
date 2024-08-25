@@ -18,7 +18,7 @@ const BlogHeader = () => {
             href="/blog"
             className="text-3xl font-bold text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
           >
-            Prakash's Blog
+            Prakash&apos;s Blog
           </Link>
         </div>
         <div className="hidden md:block items-center space-x-4">

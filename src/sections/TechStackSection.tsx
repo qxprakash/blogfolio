@@ -26,10 +26,6 @@ const TechStackSection = () => {
                 height={400}
                 className="rounded-lg shadow-lg w-full h-auto object-cover transition-all duration-300 group-hover:opacity-75"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"></div>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white text-2xl font-bold">Explore My Tech Stack</span>
-              </div>
             </div>
           </div>
         </div>
