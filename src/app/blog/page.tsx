@@ -20,6 +20,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     POSTS_PER_PAGE * (currentPage - 1),
     POSTS_PER_PAGE * currentPage
   );
+
   return (
     <div className="container max-2-4xl pb-4 lg:pb-8">
       {displayPosts?.length > 0 ? (

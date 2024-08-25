@@ -39,3 +39,7 @@
     @apply hover:underline; /* This applies only on screens greater than 640px */
   }
 }
+
+.subheading-anchor {
+  @apply no-underline hover:underline;
+}
