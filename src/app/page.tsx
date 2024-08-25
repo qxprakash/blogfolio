@@ -14,25 +14,20 @@ import GetInTouch from "@/components/GetInTouch";
 import ConnectForm from "@/components/ConnectForm";
 import TechStackSection from "@/sections/TechStackSection";
 
-
-
-
-
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
-      <Avatar icon={FaUser}/>
+      <Avatar icon={FaUser} />
       <Workspace />
-      <Avatar icon={LuContainer} marginTop="mt-4"/>
+      <Avatar icon={LuContainer} marginTop="mt-4" />
       <Projects />
       <Avatar icon={FaStackOverflow} marginTop="mt-4" />
       <TechStackSection />
       <Avatar icon={LuMail} marginTop="mt-4" />
       <GetInTouch />
       <ConnectForm />
-      <FooterWrapper />
     </>
   );
 }
