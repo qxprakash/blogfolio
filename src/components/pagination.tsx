@@ -124,7 +124,7 @@ export function QueryPagination({
 
   return (
     <Pagination
-      className={classNames("flex justify-center items-center mt-4", className)}
+      className={classNames("flex justify-center items-center mt-8", className)}
     >
       <PaginationContent>
         {prevPage >= 1 && (
