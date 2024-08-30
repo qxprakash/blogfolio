@@ -14,7 +14,7 @@ const Workspace: React.FC = () => {
         <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text text-center">
           Overview
         </h1>
-        <Image src={companyOneLogo} alt="" width={20} height={20}/>
+        {/* <Image src={companyOneLogo} alt="" width={20} height={20}/> */}
       </div>
       <div className="w-full max-w-2xl mt-12">
         <ExperienceCard

@@ -21,10 +21,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   logo,
 }) => {
   return (
-    <div className="flex items-start  relative">
+    <div className="flex items-start pl-8 relative">
       {/* Vertical line and logo */}
-      <div className="absolute left-6 w-0.5 z-10 h-full bg-gradient-to-b from-purple-500 to-transparent overflow-hidden">
-        <div className="h-full bg-gradient-to-b from-transparent via-pink-500 to-transparent animate-flow"></div>
+      <div className="absolute left-14 w-0.5 z-10 h-full bg-gradient-to-b from-purple-500 to-transparent overflow-hidden">
+        <div className="h-full bg-gradient-to-b from-transparent via-pink-500 to-transparent "></div>
       </div>
 
       <div className="relative flex flex-col items-center mr-2">
