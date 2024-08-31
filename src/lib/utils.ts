@@ -22,3 +22,11 @@ export function sortPosts(posts: Array<Post>) {
     return 0;
   });
 }
+
+
+export const scrollToSection = (sectionId: string) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({behavior: "smooth"});
+  }
+}
