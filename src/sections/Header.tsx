@@ -7,10 +7,6 @@ import { LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
 import { scrollToSection } from "@/lib/utils";
 export const Header = () => {
-
-
-
-
   return (
     <header className="py-4 border-b border-white md:border-none">
       <div className="container">
@@ -28,7 +24,9 @@ export const Header = () => {
               >
                 blog
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition"
+              <a
+                href="#"
+                className="text-white/70 hover:text-white transition"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("profile-overview");
@@ -36,7 +34,14 @@ export const Header = () => {
               >
                 Experience
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition">
+              <a
+                href="#"
+                className="text-white/70 hover:text-white transition"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("projects");
+                }}
+              >
                 Projects
               </a>
               <a href="#" className="text-white/70 hover:text-white transition">
