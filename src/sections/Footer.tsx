@@ -44,7 +44,7 @@ const Footer = () => {
         <Link
           href="/"
           className={`text-2xl transition-colors duration-300 ${
-            isActive("/") ? "text-blue-400" : "text-white hover:text-blue-200"
+            isActive("/") && !isProjects ? "text-blue-400" : "text-white hover:text-blue-200"
           }`}
           onClick={() => setIsProjects(false)}
         >
