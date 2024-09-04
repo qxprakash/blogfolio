@@ -44,7 +44,14 @@ export const Header = () => {
               >
                 Projects
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition">
+              <a
+                href="#"
+                className="text-white/70 hover:text-white transition"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("connect-form");
+                }}
+              >
                 Contact
               </a>
             </nav>
