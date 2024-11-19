@@ -44,19 +44,23 @@ const Footer = () => {
         <Link
           href="/"
           className={`text-2xl transition-colors duration-300 ${
-            isActive("/") && !isProjects ? "text-blue-400" : "text-white hover:text-blue-200"
+            isActive("/") && !isProjects
+              ? "text-blue-400"
+              : "text-white hover:text-blue-200"
           }`}
           onClick={() => setIsProjects(false)}
         >
-          {isActive("/") && !isProjects ? <RiHomeHeartFill /> : <RiHomeHeartLine />}
+          {isActive("/") && !isProjects ? (
+            <RiHomeHeartFill />
+          ) : (
+            <RiHomeHeartLine />
+          )}
         </Link>
         <Link
           href=""
           onClick={handleProjectsClick}
           className={`text-2xl transition-colors duration-300 ${
-            isProjects
-              ? "text-blue-400"
-              : "text-white hover:text-blue-200"
+            isProjects ? "text-blue-400" : "text-white hover:text-blue-200"
           }`}
         >
           {isProjects ? <RiGitRepositoryFill /> : <RiGitRepositoryLine />}

@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-
+import { socials } from "@/utils/constants";
 
 export const Hero = () => {
   return (
@@ -39,7 +39,7 @@ export const Hero = () => {
         </div>
         <div className="flex items-center space-x-2 justify-center">
           <a
-            href="https://twitter.com/Prakashoax"
+            href={socials.twitter}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center mt-5"
@@ -48,7 +48,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://github.com/qxprakash"
+            href={socials.github}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center mt-5"
@@ -57,7 +57,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="mailto:qxprakash@gmail.com"
+            href={`mailto:${socials.github}`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center mt-5"
@@ -66,7 +66,7 @@ export const Hero = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/prakash-kumar-a55577198/"
+            href={socials.linkedin}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center mt-5"
