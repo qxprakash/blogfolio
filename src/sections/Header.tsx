@@ -57,8 +57,8 @@ export const Header = () => {
           <div className="flex gap-4 items-center">
             <a href="/assets/resume.pdf" download>
               <Button icon={LuDownload}>Resume</Button>
+              {/* <MenuIcon className="md:hidden" /> */}
             </a>
-            {/* <MenuIcon className="md:hidden" /> */}
           </div>
         </div>
       </div>
