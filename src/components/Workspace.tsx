@@ -1,8 +1,6 @@
 import React from "react";
-import Avatar from "./Avatar";
-import companyOneLogo from "@/assets/company_one_logo.png";
-import companyTwoLogo from "@/assets/company_two_logo.png";
-import companyThreeLogo from "@/assets/company_three_logo.png";
+import companyOneLogo from "@/assets/bng_logo.png";
+import companyTwoLogo from "@/assets/pepcoding.png";
 import ExperienceCard from "./ExprienceCard";
 import Image from "next/image";
 
