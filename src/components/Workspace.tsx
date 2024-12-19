@@ -1,8 +1,8 @@
 import React from "react";
 import Avatar from "./Avatar";
-import companyOneLogo from "@/assets/company_one_logo.png"
-import companyTwoLogo from "@/assets/company_two_logo.png"
-import companyThreeLogo from "@/assets/company_three_logo.png"
+import companyOneLogo from "@/assets/company_one_logo.png";
+import companyTwoLogo from "@/assets/company_two_logo.png";
+import companyThreeLogo from "@/assets/company_three_logo.png";
 import ExperienceCard from "./ExprienceCard";
 import Image from "next/image";
 
@@ -18,31 +18,22 @@ const Workspace: React.FC = () => {
       </div>
       <div className="w-full max-w-2xl mt-12">
         <ExperienceCard
-          company="Company One"
-          duration="Jan 2023 - Present"
-          position="Senior UI/UX Designer"
+          company="BNG Advanced Mobile Solutions"
+          duration="Sep 2022 - Present"
+          position="Software Engineer"
           location="Remote"
-          tags={["UI Design", "UX Research", "Figma", "React"]}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tags={["Python", "Node.js", "FAST API", "Next.js", "MySQL"]}
+          description="Experienced full-stack developer with over 3 years of expertise in designing and deploying AI-driven solutions. Currently working on cutting-edge projects in applied AI, including Generative AI technologies like LLaMA, vLLM, and Stable Diffusion. Proficient in building scalable applications with FastAPI, Node.js, Next.js, Redis, and MySQL, with a strong focus on integrating AI into impactful solutions for global use. Passionate about bridging the gap between AI and business through innovative development and open-source contributions."
           logo={companyOneLogo}
         />
         <ExperienceCard
-          company="Company Two"
-          duration="May 2022 - Dec 2022"
-          position="Frontend Developer"
-          location="New York, USA"
-          tags={["JavaScript", "Tailwind CSS", "Vue.js"]}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          company="Pepcoding"
+          duration="Aug 2021 - Sep 2022"
+          position="Product Engineer and Mentor"
+          location="Noida"
+          tags={["Node.js", "React", "MongoDB", "MySQL", "Docker"]}
+          description="Worked as a Full-Stack Developer at PepCoding, contributing to the development of Nados and optimizing performance across the platform."
           logo={companyTwoLogo}
-        />
-        <ExperienceCard
-          company="Company Three"
-          duration="Jan 2021 - Apr 2022"
-          position="Web Developer"
-          location="San Francisco, USA"
-          tags={["HTML", "CSS", "JavaScript", "Node.js"]}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          logo={companyThreeLogo}
         />
       </div>
     </section>
