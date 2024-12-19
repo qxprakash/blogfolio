@@ -9,7 +9,6 @@ This project is a personal portfolio website built using **Next.js 14** and **Ta
 - **Next.js 14**: A powerful React framework for building fast and scalable web applications.
 - **Tailwind CSS**: A utility-first CSS framework that allows for quick and easy styling with predefined classes.
 - **React Icons**: For adding scalable vector icons that can be styled dynamically.s
-- **GitHub Pages**: For hosting the portfolio site.
 
 ### Running locally
 
