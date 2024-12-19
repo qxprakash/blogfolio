@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import LogoIcon from "@/assets/logo.svg";
 import { LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
@@ -17,11 +16,13 @@ export const Header = () => {
           </div>
           <div className="hidden md:block">
             <nav className="flex gap-8 text-sm">
-              <Link href="/blog">
-                <a className="text-white/70 hover:text-white transition">
-                  blog
-                </a>
-              </Link>
+              <a
+                href="/blog"
+                className="text-white/70 hover:text-white transition"
+              >
+                blog
+              </a>
+
               <a
                 href="#"
                 className="text-white/70 hover:text-white transition"
