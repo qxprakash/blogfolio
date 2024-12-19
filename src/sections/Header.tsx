@@ -57,8 +57,10 @@ export const Header = () => {
             </nav>
           </div>
           <div className="flex gap-4 items-center">
-            <Button icon={LuDownload}>Resume</Button>
-            {/* <MenuIcon className="md:hidden" /> */}
+            <a href="/assets/resume.pdf" download>
+              <Button icon={LuDownload}>Resume</Button>
+              {/* <MenuIcon className="md:hidden" /> */}
+            </a>
           </div>
         </div>
       </div>
