@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import LogoIcon from "@/assets/logo.svg";
-import MenuIcon from "@/assets/icon-menu.svg";
-import { AiOutlineCloudDownload } from "react-icons/ai";
 import { LuDownload } from "react-icons/lu";
 import Button from "@/components/Button";
 import { scrollToSection } from "@/lib/utils";
@@ -18,12 +17,11 @@ export const Header = () => {
           </div>
           <div className="hidden md:block">
             <nav className="flex gap-8 text-sm">
-              <a
-                href="/blog"
-                className="text-white/70 hover:text-white transition"
-              >
-                blog
-              </a>
+              <Link href="/blog">
+                <a className="text-white/70 hover:text-white transition">
+                  blog
+                </a>
+              </Link>
               <a
                 href="#"
                 className="text-white/70 hover:text-white transition"
@@ -57,7 +55,9 @@ export const Header = () => {
             </nav>
           </div>
           <div className="flex gap-4 items-center">
-            <Button icon={LuDownload}>Resume</Button>
+            <a href="/assets/resume.pdf" download>
+              <Button icon={LuDownload}>Resume</Button>
+            </a>
             {/* <MenuIcon className="md:hidden" /> */}
           </div>
         </div>

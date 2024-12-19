@@ -1,42 +1,37 @@
-## Personal Portfolio Made in Next.js 14 tailwind
+# Personal Portfolio & Blog
 
-## Personal Portfolio Made in Next.js 14 with Tailwind CSS
+Modern portfolio website with integrated blog system built with Next.js 14 and MDX.
 
-This project is a personal portfolio website built using **Next.js 14** and **Tailwind CSS**.
+## Tech Stack
 
-### Technologies Used
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Blog System:** MDX + Velite
+- **Deployment:** Vercel
+- **Analytics:** Vercel Analytics
 
-- **Next.js 14**: A powerful React framework for building fast and scalable web applications.
-- **Tailwind CSS**: A utility-first CSS framework that allows for quick and easy styling with predefined classes.
-- **React Icons**: For adding scalable vector icons that can be styled dynamically.s
 
-### Running locally
+## Blog System
 
-To run this project locally, follow these steps:
+Content processing workflow:
+1. Write posts in MDX (`content/posts/`)
+2. Velite processes content into type-safe data
+3. Generated content available through `.velite/generated`
+4. Statically generated pages with optimal performance
 
-1. Clone the repository:
+## Getting Started
 
-   ```bash
-   git clone https://github.com/qxprakash/landing-page.git
-   ```
+```bash
+# Clone repository
+git clone https://github.com/yourusername/portfolio
 
-2. Navigate to the Clone repository:
-   ```bash
-   cd landing-page
-   ```
-3. Install the dependencies:
-   ```bash
-   pnpm install
-   ```
-4. Start the development server:
-   ```bash
-   pnpm dev
-   ```
+# Install dependencies
+pnpm install
 
-### To Be Implemented
+# Run development server
+pnpm dev
 
-- [x] mdx blog
-- [x] Optimize images
-- [ ] Use CDN
-- [x] Reduce the bundle size on first load
-- [ ] Website Preview when Sharing the link 
+# Build for production
+pnpm build
+```
