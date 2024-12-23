@@ -1,6 +1,8 @@
 import React from "react";
 import companyOneLogo from "@/assets/bng_logo.png";
-import companyTwoLogo from "@/assets/pepcoding.png";
+import companyTwoLogo from "@/assets/gsoc_logo.png";
+import companyThreeLogo from "@/assets/pepcoding.png";
+
 import Image from "next/image";
 import ExperienceCard from "./ExpreienceCard";
 
@@ -20,8 +22,17 @@ const Workspace: React.FC = () => {
           position="Software Engineer"
           location="Remote"
           tags={["Python", "Node.js", "FAST API", "Next.js", "MySQL"]}
-          description="Experienced full-stack developer with over 3 years of expertise in designing and deploying AI-driven solutions. Currently working on cutting-edge projects in applied AI, including Generative AI technologies like LLaMA, vLLM, and Stable Diffusion. Proficient in building scalable applications with FastAPI, Node.js, Next.js, Redis, and MySQL, with a strong focus on integrating AI into impactful solutions for global use. Passionate about bridging the gap between AI and business through innovative development and open-source contributions."
+          description="At BNG Advanced Mobile Solutions, I lead Generative AI initiatives, architecting a voice assistant platform handling 4M+ daily requests across five OPCOs. I specialize in end-to-end product development, addressing latency, cost, and multilingual challenges, and have created 50+ POCs to drive AI adoption. My technical expertise spans FastAPI, Node.js, Next.js, Redis, and MySQL, enabling scalable, business-aligned solutions."
           logo={companyOneLogo}
+        />
+        <ExperienceCard
+          company="Google Summer Of Code"
+          duration="Mar 2024 - Aug 2024"
+          position="Contributor"
+          location="Remote"
+          tags={["Node.js", "C++", "Typescript", "Docker"]}
+          description="During Google Summer of Code 2024, I contributed to Intel’s OpenVINO project by enhancing its Node.js bindings, implementing tensor operations and model APIs to improve usability for AI tasks. I developed API samples like OCR and Vision Background Removal and resolved a critical infer request bug , which occured when models ouput layer didn't have any default name."
+          logo={companyTwoLogo}
         />
         <ExperienceCard
           company="Pepcoding"
@@ -30,7 +41,7 @@ const Workspace: React.FC = () => {
           location="Noida"
           tags={["Node.js", "React", "MongoDB", "MySQL", "Docker"]}
           description="Worked as a Full-Stack Developer at PepCoding, contributing to the development of Nados and optimizing performance across the platform."
-          logo={companyTwoLogo}
+          logo={companyThreeLogo}
         />
       </div>
     </section>
