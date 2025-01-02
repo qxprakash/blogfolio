@@ -1,5 +1,8 @@
-import React from 'react'
-import BlogHeader from '@/components/blog-header'
+import React from "react";
+import BlogHeader from "@/components/blog-header";
+
+export const dynamic = "force-static";
+export const revalidate = 86400;
 
 const BlogLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,7 +10,7 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
       <BlogHeader />
       <main>{children}</main>
     </div>
-  )
-}
+  );
+};
 
-export default BlogLayout
+export default BlogLayout;
