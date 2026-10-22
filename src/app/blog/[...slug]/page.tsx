@@ -6,19 +6,19 @@ import "@/styles/mdx.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 interface PostPageProps {
-  params: {
+  params: Promise<{
     slug: string[];
-  };
+  }>;
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = params?.slug?.join("/");
+  const slug = (await params)?.slug?.join("/");
   const post = posts.find((post) => post.slugAsParams === slug);
   return post;
 }
 
 export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
+  Awaited<PostPageProps["params"]>[]
 > {
   return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
 }
